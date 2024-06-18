@@ -20,3 +20,9 @@ To install, open a terminal window within your prototype and run `npm install go
 To use a a notification within your prototype:
 * Insert `{% from "govukNotifications/components/email.njk" import "govukNotificationsEmail" %}` or `{% from "govukNotifications/components/phone.njk" import "govukNotificationsPhone" %}` at the top of your page.
 * Somewhere outside of your content (usually at the top of the page in the `beforeContent` block) use `{{ govukNotificationsEmail('Sender', 'Subject line) }}` or `{{ govukNotificationsPhone('Sender', 'Body content') }}` (replacing the 'Sender' with the name of your sender, and the subject/content to your content).
+
+## Updating
+
+To update, go to `http://localhost:3000/manage-prototype/plugins-installed` and hit the update button.
+
+![Update view](./screenshot-update.png?raw=true)

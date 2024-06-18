@@ -1,15 +1,23 @@
 {
   "name": "govuk-notifications",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "Some notifications overlays for the GOV.UK prototype kit",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jrmedd/govuk-notifications.git"
+  },
+  "bugs": {
+    "url": "https://github.com/jrmedd/govuk-notifications/issues"
+  },
+  "homepage": "https://github.com/jrmedd/govuk-notifications#readme",
   "keywords": [
     "prototyping",
     "government",
-    "govuk-prototype-kit"
+    "govuk-prototype-kit",
+    "notifications"
   ],
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "jrmedd",
   "license": "ISC",

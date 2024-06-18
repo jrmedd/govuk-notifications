@@ -17,6 +17,10 @@
     {
       "macroName": "govukNotificationsPhone",
       "importFrom": "govukNotifications/components/phone.njk"
+    },
+    {
+      "macroName": "govukNotificationsEmail",
+      "importFrom": "govukNotifications/components/email.njk"
     }
   ],
   "sass": [

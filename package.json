@@ -1,6 +1,6 @@
 {
   "name": "govuk-notifications",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Some notifications overlays for the GOV.UK prototype kit",
   "repository": {
     "type": "git",

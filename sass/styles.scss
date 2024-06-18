@@ -1,4 +1,4 @@
-@keyframes phonePopUp {
+@keyframes gukn-phonePopUp {
   from {
     bottom: -25rem;
   }
@@ -6,105 +6,123 @@
     bottom: 0;
   }
 }
-.phone-frame {
+
+.gukn-phone-frame {
   &, & > * {
     box-sizing: border-box;
   }
-  animation-name: phonePopUp;
-  animation-duration: .5s;
-  animation-timing-function: ease-out;
-  animation-delay: 1s;
-  animation-fill-mode: forwards;
   position: fixed;
   bottom: -26.25rem;
   right: 0;
   transform: translate(-25%, 0%);
   width: 23rem;
   height: 25rem;
-  box-shadow: 0px 0px 0px 1.25rem rgba(0, 0, 0, 1.0);
-  background: linear-gradient(45deg, #5fc9f8, #fecb2e, #fd9426, #fc3158, #147efb, #53d769);
   border-top-left-radius: 16.5%;
   border-top-right-radius: 16.5%;
+  background: linear-gradient(45deg, #5fc9f8, #fecb2e, #fd9426, #fc3158, #147efb, #53d769);
+  box-shadow: 0 0 0 1.25rem #000;
   display: flex;
   flex-flow: column;
   align-items: center;
   gap: 1rem;
-  .icons {
+  animation-name: gukn-phonePopUp;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-out;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+
+  .gukn-icons {
     position: absolute;
     top: 0;
     right: 0;
     margin-top: 1rem;
     margin-right: 1.75rem;
-    path, rect {
-      fill: white;
+
+    path,
+    rect {
+      fill: #fff;
     }
-    .battery-outline {
+
+    .gukn-battery-outline {
       opacity: 0.3;
     }
   }
-  .lock {
-    transform: translate(0.5rem, 0px);
+
+  .gukn-lock {
+    transform: translate(0.5rem, 0);
+
     path {
-      fill: white;
+      fill: #fff;
     }
   }
-  .camera {
+
+  .gukn-camera {
     height: 2rem;
     width: 11rem;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
-    background: black;
+    background: #000;
   }
-  .datetime-container {
+
+  .gukn-datetime-container {
     p {
       font-family: sans-serif;
-      color: white;
+      color: #fff;
       text-align: center;
       margin: 0;
     }
-    .time {
+
+    .gukn-time {
       font-size: 4rem;
-      font-weight: 100;   
+      font-weight: 100;
     }
-    .date {
+
+    .gukn-date {
       font-size: 1.2rem;
     }
   }
-  .notification {
-    background: rgba(255, 255, 255, 0.7);
+
+  .gukn-notification {
     width: 95%;
+    padding: 0.5rem 1rem;
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 1rem;
-    padding: .5rem 1rem;
     font-family: sans-serif;
-    .notification-heading-wrapper {
-      color: #2d2d2d;
+
+    .gukn-notification-heading-wrapper {
       display: flex;
       flex-flow: row;
       align-items: center;
-      gap: .5rem;
-      .icon {
+      gap: 0.5rem;
+      color: #2d2d2d;
+
+      .gukn-icon {
         width: 1.25rem;
         height: 1.25rem;
         display: inline-block;
-        }
-      .notification-heading-text {
-        font-size: .8rem;
-        font-weight: 300;
+      }
+
+      .gukn-notification-heading-text {
         margin: 0;
+        font-size: 0.8rem;
+        font-weight: 300;
         text-transform: uppercase;
       }
-      .notification-timestamp {
+
+      .gukn-notification-timestamp {
+        font-size: 0.8rem;
         font-weight: 100;
-        font-size: .8rem;
         text-align: right;
         flex-grow: 1;
       }
     }
-    .notification-content {
-      .notification-title {
-        margin: 1rem 0 .25rem 0;
+
+    .gukn-notification-content {
+      .gukn-notification-title {
+        margin: 1rem 0 0.25rem 0;
       }
-      .notification-body {
+
+      .gukn-notification-body {
         font-family: sans-serif;
         font-size: 1rem;
       }
@@ -112,55 +130,52 @@
   }
 }
 
-@keyframes notificationSlide {
+@keyframes gukn-notificationSlide {
   from {
     opacity: 0;
     right: -21rem;
   }
-
   to {
     opacity: 1;
     right: 0;
   }
 }
 
-.notification-win {
-  .icon-win {
-    // width: 3rem;
-    // flex-basis: 35%;
+.gukn-notification-win {
+  .gukn-icon-win {
     display: block;
   }
 
-  .icon-mac {
+  .gukn-icon-mac {
     display: none;
   }
 
-  .application-win {
+  .gukn-application-win {
     display: block;
   }
 
-  .application-mac {
+  .gukn-application-mac {
     display: none;
   }
 
-  .email-notification {
-    animation-name: notificationSlide;
-    animation-duration: .25s;
-    animation-timing-function: ease-out;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
-    display: flex;
-    flex-flow: row;
-    gap: 1rem;
+  .gukn-email-notification {
     position: fixed;
     bottom: 0;
     right: -24rem;
+    display: flex;
+    flex-flow: row;
+    gap: 1rem;
     width: 20rem;
     padding: 1rem;
     margin: 1rem;
     height: auto;
     background: rgba(0, 0, 0, 0.8);
     backdrop-filter: blur(20px);
+    animation-name: gukn-notificationSlide;
+    animation-duration: 0.25s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 
     p {
       font-family: sans-serif;
@@ -169,68 +184,68 @@
     }
   }
 
-  .notification-sender {
+  .gukn-notification-sender {
     color: #fff;
     font-weight: 700;
   }
 
-  .notification-subject,
-  .application-win {
+  .gukn-notification-subject,
+  .gukn-application-win {
     color: #a3a8a9;
     font-weight: 400;
   }
 }
 
-.notification-mac {
-  .icon-win {
+.gukn-notification-mac {
+  .gukn-icon-win {
     display: none;
   }
 
-  .icon-mac {
+  .gukn-icon-mac {
     // width: 2.25rem;
     // flex-basis: 30%;
   }
 
-  .application-win {
+  .gukn-application-win {
     display: none;
   }
 
-  .application-mac {
+  .gukn-application-mac {
     display: block;
     font-weight: 700;
   }
 
-  .email-notification {
-    animation-name: notificationSlide;
-    animation-duration: .5s;
-    animation-timing-function: ease-out;
-    animation-delay: 1s;
-    animation-fill-mode: forwards;
+  .gukn-email-notification {
+    position: fixed;
+    top: 0;
+    right: -24rem;
     display: flex;
     align-items: center;
     flex-flow: row;
     gap: 1rem;
-    position: fixed;
-    top: 0;
-    right: -24rem;
     width: 20rem;
     padding: 1rem;
     margin: 1rem;
     height: auto;
     border-radius: 1rem;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.4) 100%);
-    box-shadow: 0px 0px 0px 1px rgba(90, 90, 90, 1.0);
+    box-shadow: 0 0 0 1px rgba(90, 90, 90, 1.0);
     backdrop-filter: blur(20px);
+    animation-name: gukn-notificationSlide;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
 
-    .notification-sender {
+    .gukn-notification-sender {
       font-weight: 700;
     }
 
-    .notification-content {
+    .gukn-notification-content {
       p {
-        color: white;
         font-family: sans-serif;
-        font-size: .85rem;
+        font-size: 0.85rem;
+        color: #fff;
         margin: 0;
       }
     }

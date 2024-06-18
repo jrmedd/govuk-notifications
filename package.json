@@ -1,0 +1,26 @@
+{
+  "name": "govuk-notifications",
+  "version": "1.0.0",
+  "description": "Some notifications overlays for the GOV.UK prototype kit",
+  "keywords": [
+    "prototyping",
+    "government",
+    "govuk-prototype-kit"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "jrmedd",
+  "license": "ISC",
+  "files": [
+    "lib",
+    "govuk-prototype-kit.config.json"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "govuk-prototype-kit": "^13.0.0"
+  }
+}

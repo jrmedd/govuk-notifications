@@ -2,9 +2,9 @@
   "meta": {
     "description": "Use this GOV.UK Prototype Kit plugin to add notification overlays to GOV.UK prototype kit.",
     "urls": {
-      "documentation": "https://x-govuk.github.io/govuk-prototype-filters",
-      "releaseNotes": "https://github.com/x-govuk/govuk-prototype-filters/releases/tag/v{{version}}",
-      "versionHistory": "https://github.com/x-govuk/govuk-prototype-filters/releases"
+      "documentation": "https://github.com/jrmedd/govuk-notificatons",
+      "releaseNotes": "https://github.com/jrmedd/govuk-notificatons",
+      "versionHistory": "https://npmjs.com/package/govuk-notifications?activeTab=versions"
     }
   },
   "pluginDependencies": [
@@ -16,11 +16,14 @@
   "nunjucksMacros": [
     {
       "macroName": "govukNotificationsPhone",
-      "importFrom": "macros/phone.njk"
+      "importFrom": "govukNotifications/components/phone.njk"
     }
   ],
   "sass": [
     "/sass/styles.scss"
+  ],
+  "scripts": [
+    "/scripts/javascript.js"
   ],
   "nunjucksFilters": [
     "/lib/timeAndDate.js"

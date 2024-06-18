@@ -1,6 +1,6 @@
 {
   "name": "govuk-notifications",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Some notifications overlays for the GOV.UK prototype kit",
   "keywords": [
     "prototyping",
@@ -14,9 +14,10 @@
   "author": "jrmedd",
   "license": "ISC",
   "files": [
+    "govukNotifications",
     "lib",
     "sass",
-    "macros",
+    "scripts",
     "govuk-prototype-kit.config.json"
   ],
   "publishConfig": {

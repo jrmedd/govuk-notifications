@@ -2,6 +2,8 @@
 
 When working on a prototype for a service recently, we had a requirement to test SMS messages and emails being sent to the user as part of the user journey. To test this within the bounds of the [GOV.UK Prototype Kit](https://prototype-kit.service.gov.uk/) I created phone and notifications in overlays in CSS to simulate the receipt of these messages.
 
+![Example of phone and email notifications](./screenshot-demo.gif?raw=true)
+
 ## Overview
 
 There are currently two notifications available `govukNotificationsPhone` and `govukNotificationsEmail` and I plan to add more with greater flexibility later. The email notification also adapts to Mac and Windows, and I'm planning to add iOS/Android support soon.
